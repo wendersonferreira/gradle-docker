@@ -1,7 +1,7 @@
 FROM java:8-jdk
 MAINTAINER Dave Henderson <dhenderson@gmail.com>
 
-ENV GRADLE_VERSION 2.6
+ARG GRADLE_VERSION=2.6
 
 WORKDIR /usr/bin
 RUN curl -sLO https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-all.zip && \
